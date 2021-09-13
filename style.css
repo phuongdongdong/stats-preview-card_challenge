@@ -1,0 +1,129 @@
+body{
+    background-color: hsl(233, 47%, 7%);
+    font-size: 1vw;
+}
+
+h1{
+    color: hsl(0, 0%, 100%);
+    margin-top: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.95vw;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+#keyword{
+    color: hsl(277, 64%, 61%);
+}
+
+.container{
+    width:70%;
+    height:60%;
+    position: absolute;
+    top:20%;
+    left:15%;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 0.8vw;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.photo-side{
+    /* width:60%; */
+    flex: 60%;
+    background-image: url(images/image-header-desktop.jpg);
+    filter: invert(12%) sepia(20%) saturate(6000%) hue-rotate(240deg) brightness(57%) contrast(108%) grayscale(30%);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    border-radius: 0 0.8vw 0.8vw 0;
+}
+
+.text-side{
+    flex:50%;
+    padding: 6%;
+    height: auto;
+    /* width: 50%; */
+}
+
+.flex-container{
+    margin: 30px auto 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.stats{
+    margin: 20px 30px 20px 0;
+}
+
+.stats-heading{
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.5vw;
+    margin-bottom: 0;
+}
+
+.stats p{
+    margin: auto;
+}
+
+.attribution{
+    color:white;
+}
+
+@media screen and (max-width: 800px){
+    body{
+        font-size: 1.3vw;
+    }
+    p{
+        font-size: 1.4vw;
+    }
+    .container{
+        height: 270px;
+    }
+    .flex-container{
+        margin: auto;
+    }
+}
+@media screen and (max-width: 600px){
+    body{
+        font-size: 3vw;
+    }
+    p{
+        font-size: 2.5vw;
+    }
+    .container{
+        flex-direction: column;
+        height: 600px;
+    }
+    .photo-side{
+        flex:100%;
+        border-radius: 1vw 1vw 0 0;
+    }
+    .text-side{
+        flex:100%;
+        text-align: center;
+        height: 500px;
+    }
+    .flex-container{
+        flex-direction: column;
+    }
+    .stats{
+        margin:5% auto;
+    }
+    .stats-heading{
+        font-size: 4vw;
+    }
+    .attribution p{
+        font-size: 1.5vw;
+    }
+}
